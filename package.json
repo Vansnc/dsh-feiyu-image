@@ -1,6 +1,6 @@
 {
   "name": "dsh-feiyu-image",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "给大肥鱼一个相机：调百炼 wan2.7-image 出二次元图，角色形象用固定设定+固定种子钉住，自动带此刻的穿着和场景，出图可直接发到 QQ。",
   "type": "module",
   "license": "MIT",
