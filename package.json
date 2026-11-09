@@ -1,0 +1,22 @@
+{
+  "name": "dsh-feiyu-image",
+  "version": "0.1.0",
+  "description": "给大肥鱼一个相机：调百炼 Token Plan 生图（wan2.7-image），自动沿用她此刻的穿着和场景，出图存本地、可直接发到 QQ。",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "image", "wanx", "bailian", "companion"],
+  "author": "Vansnc",
+  "repository": { "type": "git", "url": "git+https://github.com/Vansnc/dsh-feiyu-image.git" },
+  "homepage": "https://github.com/Vansnc/dsh-feiyu-image#readme",
+  "bugs": { "url": "https://github.com/Vansnc/dsh-feiyu-image/issues" },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml", "README.md", "CHANGELOG.md", "LICENSE"],
+  "publishConfig": { "access": "public" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
