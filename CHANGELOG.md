@@ -1,5 +1,9 @@
 # 更新记录
 
+## 0.5.2
+
+- 修 `cannot get property "llm" without inject`：插件 inject 里补上 `llm` 和 `agents`，扩写才拿得到模型。
+
 ## 0.5.1
 
 - 修「扩写跳过：拿不到模型」：取不到会话路由时兜底用 `deepseek-official/deepseek-flash`，
