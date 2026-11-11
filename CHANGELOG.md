@@ -1,5 +1,13 @@
 # 更新记录
 
+## 0.5.4
+
+- **修「扩写太短（0）」**：默认思考档位 `high` 时，700 token 上限被 reasoning 全吃光，
+  正文一个字都出不来（实测 `completion_tokens` 700 里面全是 reasoning_tokens），
+  于是每次都悄悄退回模板扩写；
+- 扩写调用改成 `reasoningEffort: 'low'` + `maxTokens: 2400`；模型不认 low 就退回不带 effort 的裸调（上限 3000）；
+- 日志补上终止原因和用量，「扩写太短」现在能看出是 `max-tokens` 截断还是真没输出。
+
 ## 0.5.3
 
 - 模型不再手写死：设置页打开就问方舟 `GET /models`，只留图像生成（`domain=ImageGeneration` / 输出模态含 image），
