@@ -1,6 +1,6 @@
 {
   "name": "dsh-feiyu-image",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "给大肥鱼一个相机：火山方舟 Seedream 5.0 出竖幅自拍，参考图锁角色，镜头/表情/细节可配，出图可直接发到 QQ。",
   "type": "module",
   "license": "MIT",
