@@ -1,3 +1,7 @@
+> **⚠️ 已并入 [`dsh-feiyu-life`](https://github.com/Vansnc/dsh-feiyu-life)（0.6.0 起）。**
+> 相机现在是生活线插件的一部分：`shoot` 工具、提示词扩写、出图自检都在那边，设置页是「鱼的生活线 → 照片」。
+> 这个包**停止更新**，npm 上也标了 deprecated。下面留着当历史记录。
+
 # dsh-feiyu-image
 
 [![npm](https://img.shields.io/npm/v/dsh-feiyu-image)](https://www.npmjs.com/package/dsh-feiyu-image)
