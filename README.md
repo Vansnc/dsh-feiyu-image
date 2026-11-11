@@ -7,8 +7,8 @@
 给陪伴角色一个相机：模型调一个工具就能「拍一张」，**自动带上她此刻的穿着和所在场景**，
 存成本地图片，回复里写 `![描述](路径)` 就能发到 QQ。
 
-生图默认走 **火山方舟 Seedream 5.0**（`doubao-seedream-5-0-pro-260628`，2048×2048），
-也保留 **百炼 Token Plan**（`wan2.7-image`）当备用后端。
+生图走 **火山方舟 Seedream 5.0**（默认 `doubao-seedream-5-0-pro-260628`）。
+设置页的模型下拉是**实时问方舟要的**（`GET /models`，筛图像生成），新模型上线会自动出现，也能手填。
 
 有参考图之后，**角色形象是锁死的**：把 `~/.dsh/feiyu-image/角色设定/正面.jpg` 传进去，
 脸、发色渐变、鲸鱼鳍耳、呆毛、鲸鱼尾、女仆装款式都跟着这张图走。
@@ -40,7 +40,7 @@
 dsh plugin --profile web add dsh-feiyu-image
 ```
 
-需要 `~/.dsh/bailian-tp/config.json`（Token Plan 的 key 和 base，跟 `bailian-tp` 插件共用）。
+需要 `~/.dsh/ark/config.json`（方舟的 `apiKey` 和 `baseUrl`）。
 
 ## 配置
 
@@ -49,7 +49,7 @@ dsh plugin --profile web add dsh-feiyu-image
 ```json
 {
   "总开关": true,
-  "模型": "wan2.7-image",
+  "模型": "doubao-seedream-5-0-pro-260628",
   "外观": "中国大陆 21 岁女大学生，素颜淡妆，黑色齐肩发，皮肤偏白，身形偏瘦",
   "风格": "手机随手拍，自然光，轻微胶片颗粒，真实质感，不过度磨皮",
   "每日上限": 8,

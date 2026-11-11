@@ -1,5 +1,12 @@
 # 更新记录
 
+## 0.5.3
+
+- 模型不再手写死：设置页打开就问方舟 `GET /models`，只留图像生成（`domain=ImageGeneration` / 输出模态含 image），
+  下拉可选、能刷新（缓存 10 分钟）、拉不到退回内置名单，也保留手填；
+- **去掉百炼（Token Plan）生图**：后端下拉、`wan2.7-image` 那套模型、`chat/completions` 分支全删，只剩方舟 Seedream；
+  老配置里写着 `后端: bailian` 的，直接当方舟走，不会报错。
+
 ## 0.5.2
 
 - 修 `cannot get property "llm" without inject`：插件 inject 里补上 `llm` 和 `agents`，扩写才拿得到模型。
